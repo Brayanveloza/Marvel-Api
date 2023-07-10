@@ -11,3 +11,72 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.comics-page .header {
+  margin-left: 0 !important;
+  margin-top: 30px !important;
+  margin-bottom: 50px !important;
+  font: 800 26px/1 "RobotoCondensed", "Trebuchet MS", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.series-page .header {
+  margin-left: 0 !important;
+  margin-top: 30px !important;
+  margin-bottom: 50px !important;
+  font: 800 26px/1 "RobotoCondensed", "Trebuchet MS", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#slide-series-image {
+  padding: 40px 0;
+  width: 100%;
+  background-image: url(./img/marvel.jpg);
+  height: 650px;
+  background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+.error-404-context-text {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100vh;
+}
+
+.error-404 .error-404-context-text h1 {
+  color: white;
+}
+
+.error-404 .error-404-context-text h2 {
+  color: white;
+  margin-bottom: 50px;
+}
+
+.error-404 .error-404-context-text .error-404-context-text-container {
+  text-align: center;
+}
+
+.series-page {
+  background-color: #B3B6B7;
+  text-align: center;
+}
+
+h2.ui.header {
+  font-family: "Cooper Black";
+}
+
+button.btn.btn-danger {
+  padding: 10px;
+  background: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}

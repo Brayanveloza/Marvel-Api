@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from "react-router-dom";
+import "semantic-ui-css/semantic.min.css";
+import Login from "./pages/Login";
+import Listado from "./pages/Listado";
+import Detail from "./pages/Detail";
+import { ProtectedRoutes } from './components/ProtectedRoutes';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route index element={<Login />} />
+        <Route path="/login" element={<Login />} />
+
+        <Route element={<ProtectedRoutes />}>
+          <Route path="/listado" element={<Listado />} />
+          <Route path="/detail/:id" element={<Detail />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
